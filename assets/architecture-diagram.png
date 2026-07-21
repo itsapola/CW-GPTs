@@ -1,1 +1,425 @@
+# Architecture Diagram
+
+The CalmWave AI Workflow Suite was designed as a modular, human-governed system of specialized GPTs.
+
+The architecture separated intelligence, strategy, governance, execution, measurement, and operations while keeping human accountability above the entire system.
+
+## System Architecture
+
+```mermaid
+flowchart TB
+    H["Human Owners & Reviewers"]
+
+    subgraph INPUTS["Inputs & Knowledge"]
+        direction LR
+        I1["User Briefs"]
+        I2["Public Research"]
+        I3["Approved Brand Standards"]
+        I4["Campaign & Performance Data"]
+        I5["Internal Working Context"]
+    end
+
+    subgraph INTEL["Intelligence Layer"]
+        direction LR
+        ABM["ABM Researcher<br/>Account intelligence, call analysis, ABM briefs"]
+        SIMON1["Simon<br/>Analytics and evidence interpretation"]
+    end
+
+    subgraph STRATEGY["Strategy & Governance Layer"]
+        direction LR
+        AMELIE["Amelie<br/>Executive strategy and decision support"]
+        WAVEFORM["WaveForm<br/>Brand voice and messaging governance"]
+    end
+
+    subgraph EXECUTION["Execution Layer"]
+        direction LR
+        CHARLIE["Charlie<br/>Copywriting and content"]
+        JUNO["Juno<br/>Website, SEO, UX and CRO"]
+        NELSON["Nelson<br/>Email and automation"]
+        FIONA["Fiona<br/>Social and community"]
+        GREGOR["Gregor<br/>Video and production"]
+    end
+
+    subgraph ENABLEMENT["Measurement & Operations Layer"]
+        direction LR
+        SIMON2["Simon<br/>Performance analysis and learning"]
+        GEM["Gem<br/>Operations, coordination and follow-through"]
+    end
+
+    OUTPUT["Reviewed Marketing Outputs<br/>Campaigns, briefs, content, decisions and action plans"]
+
+    INPUTS --> INTEL
+    INTEL --> STRATEGY
+    STRATEGY --> EXECUTION
+    EXECUTION --> ENABLEMENT
+    ENABLEMENT --> OUTPUT
+
+    SIMON2 -. "Insights inform iteration" .-> STRATEGY
+    GEM -. "Coordinates next actions" .-> EXECUTION
+
+    H --> INPUTS
+    H --> INTEL
+    H --> STRATEGY
+    H --> EXECUTION
+    H --> ENABLEMENT
+    H --> OUTPUT
+```
+
+## Architecture Layers
+
+### Human Governance Layer
+
+Human owners and reviewers remained accountable across the entire system.
+
+They were responsible for:
+
+* defining the business objective
+* selecting the appropriate specialist
+* supplying approved context
+* validating facts and claims
+* reviewing consequential outputs
+* making final decisions
+* approving publication or distribution
+* escalating clinical, legal, regulatory, or reputational risks
+
+Human review was part of the architecture—not an optional step added after generation.
+
+### Inputs and Knowledge Layer
+
+The suite could work from several types of approved inputs:
+
+* user briefs
+* public research
+* approved messaging and brand standards
+* campaign and performance data
+* internal working context
+* meeting notes
+* call transcripts
+* channel requirements
+* prior decisions and constraints
+
+Restricted or unnecessarily sensitive information was excluded.
+
+Knowledge quality directly affected output quality, so source ownership, recency, approval status, and relevance needed to remain visible.
+
+### Intelligence Layer
+
+The intelligence layer organized evidence before strategy or execution.
+
+**ABM Researcher** converted account, stakeholder, market, and call information into structured intelligence.
+
+**Simon** interpreted performance data, identified trends and limitations, and distinguished observation from unsupported causation.
+
+This layer was responsible for making the available evidence—and its gaps—visible.
+
+### Strategy and Governance Layer
+
+The strategy and governance layer determined what the information meant and whether the proposed direction was appropriate.
+
+**Amelie** framed decisions, challenged assumptions, prioritized opportunities, and surfaced risks and tradeoffs.
+
+**WaveForm** assessed brand voice, positioning, terminology, tone, messaging consistency, and claims discipline.
+
+These functions remained separate:
+
+* Amelie evaluated the strategic argument.
+* WaveForm evaluated alignment with approved brand and messaging standards.
+
+### Execution Layer
+
+The execution layer translated approved direction into channel-specific work.
+
+**Charlie** developed and refined copy.
+
+**Juno** integrated website strategy, messaging, SEO, UX, information architecture, and conversion optimization.
+
+**Nelson** designed email campaigns, segmentation, nurture sequences, lifecycle communications, and automation logic.
+
+**Fiona** developed social media, community, engagement, and moderation strategies.
+
+**Gregor** translated objectives into video concepts, scripts, shot plans, production decisions, and editing recommendations.
+
+Each specialist applied a distinct functional lens rather than serving as an interchangeable content generator.
+
+### Measurement and Operations Layer
+
+The final layer connected execution to learning and follow-through.
+
+**Simon** interpreted results, surfaced implications, and identified what should be measured or investigated next.
+
+**Gem** converted decisions and outputs into actions, owners, dependencies, deadlines, documentation, and follow-up.
+
+This created a feedback loop in which performance insights could inform future strategy and execution.
+
+## Specialist Relationship Map
+
+```mermaid
+flowchart LR
+    ABM["ABM Researcher"] --> AMELIE["Amelie"]
+    SIMON["Simon"] --> AMELIE
+
+    AMELIE --> WAVEFORM["WaveForm"]
+    AMELIE --> CHARLIE["Charlie"]
+    WAVEFORM --> CHARLIE
+
+    CHARLIE --> JUNO["Juno"]
+    CHARLIE --> NELSON["Nelson"]
+    CHARLIE --> FIONA["Fiona"]
+    CHARLIE --> GREGOR["Gregor"]
+
+    JUNO --> SIMON
+    NELSON --> SIMON
+    FIONA --> SIMON
+    GREGOR --> SIMON
+
+    AMELIE --> GEM["Gem"]
+    JUNO --> GEM
+    NELSON --> GEM
+    FIONA --> GEM
+    GREGOR --> GEM
+    SIMON --> GEM
+
+    SIMON -. "Performance learning" .-> AMELIE
+    GEM -. "Operational feedback" .-> AMELIE
+```
+
+The arrows represent common handoffs, not rigid requirements.
+
+The architecture was modular: a workflow could begin with any specialist appropriate to the business need.
+
+## Governance Architecture
+
+```mermaid
+flowchart TB
+    REQUEST["User Request"]
+
+    SCOPE{"Within specialist scope?"}
+    DATA{"Information appropriate<br/>and necessary?"}
+    EVIDENCE{"Evidence sufficient?"}
+    RISK{"Risk level?"}
+    GENERATE["Generate structured draft"]
+    REVIEW["Human Review"]
+    SME["Specialist / SME Review"]
+    APPROVE["Approve, revise or reject"]
+    ESCALATE["Clarify, redirect or escalate"]
+
+    REQUEST --> SCOPE
+
+    SCOPE -- "No" --> ESCALATE
+    SCOPE -- "Yes" --> DATA
+
+    DATA -- "No" --> ESCALATE
+    DATA -- "Yes" --> EVIDENCE
+
+    EVIDENCE -- "Insufficient" --> ESCALATE
+    EVIDENCE -- "Sufficient or qualified" --> RISK
+
+    RISK -- "Low" --> GENERATE
+    RISK -- "Moderate" --> GENERATE
+    RISK -- "High" --> SME
+
+    GENERATE --> REVIEW
+    SME --> GENERATE
+    REVIEW --> APPROVE
+
+    APPROVE -- "Revision needed" --> GENERATE
+```
+
+This control flow helped prevent output generation from bypassing scope, information-handling, evidence, and review requirements.
+
+## Information Flow
+
+```mermaid
+flowchart LR
+    A["Objective"]
+    B["Audience"]
+    C["Evidence"]
+    D["Constraints"]
+    E["Approved Decisions"]
+    F["Assumptions"]
+    G["Open Questions"]
+
+    PACKET["Structured Handoff Packet"]
+
+    NEXT["Next Specialist"]
+    OUTPUT["Specialist Output"]
+    REVIEW["Human Review"]
+
+    A --> PACKET
+    B --> PACKET
+    C --> PACKET
+    D --> PACKET
+    E --> PACKET
+    F --> PACKET
+    G --> PACKET
+
+    PACKET --> NEXT
+    NEXT --> OUTPUT
+    OUTPUT --> REVIEW
+```
+
+The handoff packet preserved context as work moved through the system.
+
+Without a structured handoff, each specialist risked:
+
+* reinterpreting the objective
+* losing approved decisions
+* overlooking constraints
+* treating assumptions as facts
+* duplicating earlier work
+* changing strategy during execution
+
+## Example Campaign Architecture
+
+```mermaid
+sequenceDiagram
+    participant U as Human Owner
+    participant R as ABM Researcher
+    participant A as Amelie
+    participant W as WaveForm
+    participant C as Charlie
+    participant N as Channel Specialist
+    participant S as Simon
+    participant G as Gem
+
+    U->>R: Provide target account and objective
+    R->>U: Return sourced account brief and unknowns
+    U->>A: Approve evidence and request strategy
+    A->>U: Return campaign thesis, risks and priorities
+    U->>W: Submit proposed messaging direction
+    W->>U: Return brand and claims review
+    U->>C: Request core campaign copy
+    C->>U: Return structured draft
+    U->>N: Adapt approved copy for channel
+    N->>U: Return channel execution
+    U->>S: Provide performance results
+    S->>U: Return findings, limitations and recommendations
+    U->>G: Convert decisions into follow-up plan
+    G->>U: Return owners, dependencies and deadlines
+```
+
+The human owner remained involved at each material transition.
+
+Specialists did not autonomously pass work to one another or approve preceding outputs.
+
+## Feedback Loop
+
+```mermaid
+flowchart LR
+    STRATEGY["Strategy"]
+    EXECUTION["Execution"]
+    PERFORMANCE["Performance Data"]
+    ANALYSIS["Analysis"]
+    LEARNING["Validated Learning"]
+    REVISION["Revised Strategy or Workflow"]
+
+    STRATEGY --> EXECUTION
+    EXECUTION --> PERFORMANCE
+    PERFORMANCE --> ANALYSIS
+    ANALYSIS --> LEARNING
+    LEARNING --> REVISION
+    REVISION --> STRATEGY
+```
+
+The suite was designed to support iteration rather than one-time content generation.
+
+Performance insights could lead to:
+
+* revised assumptions
+* updated messaging
+* different channel priorities
+* additional research
+* workflow changes
+* new evaluation scenarios
+* tighter governance controls
+
+## Control Points
+
+The architecture included several points where work could pause, redirect, or escalate.
+
+| Control point | Core question                                  | Possible action                        |
+| ------------- | ---------------------------------------------- | -------------------------------------- |
+| Intake        | Is the task clearly defined?                   | Clarify objective or audience          |
+| Scope         | Is this the right specialist?                  | Redirect to another GPT or human owner |
+| Information   | Is the input appropriate to use?               | Redact, minimize, or reject            |
+| Evidence      | Are claims sufficiently supported?             | Qualify, verify, or escalate           |
+| Strategy      | Has the direction been approved?               | Revise or obtain human decision        |
+| Brand         | Does the output align with approved standards? | Approve, revise, or escalate           |
+| Risk          | Could an error cause material harm?            | Require specialist review              |
+| Publication   | Is the output ready for external use?          | Approve, revise, or reject             |
+| Performance   | What did the results actually establish?       | Iterate, investigate, or maintain      |
+| Lifecycle     | Does the specialist remain useful and current? | Revise, consolidate, or retire         |
+
+## Architectural Boundaries
+
+The system preserved several important separations.
+
+### AI assistance versus human authority
+
+The GPTs could produce decision support. They could not become the accountable decision-maker.
+
+### Evidence versus interpretation
+
+Research and analytics could establish what was known. Strategy could interpret its significance.
+
+### Strategy versus execution
+
+Execution specialists applied approved direction. They were not expected to silently redefine the objective.
+
+### Creation versus governance
+
+Charlie and channel specialists could create outputs. WaveForm evaluated alignment with approved standards.
+
+### Coordination versus ownership
+
+Gem could document owners and actions. Humans confirmed accountability.
+
+### Performance interpretation versus causal certainty
+
+Simon could identify patterns and hypotheses. Causal conclusions required sufficient evidence and human judgment.
+
+## System Characteristics
+
+The architecture was designed to be:
+
+**Modular**
+Specialists could be combined according to the workflow.
+
+**Specialized**
+Each GPT applied distinct operating logic and expertise.
+
+**Human-governed**
+Accountability and approval remained with people.
+
+**Traceable**
+Evidence, assumptions, decisions, and handoffs were intended to remain visible.
+
+**Reviewable**
+Structured outputs made quality and risk easier to assess.
+
+**Iterative**
+Measurement and feedback could improve future work.
+
+**Retirable**
+Specialists could be consolidated or removed when their business value or governance could no longer be maintained.
+
+## Portfolio Scope
+
+These diagrams describe the functional architecture at a high level.
+
+They do not expose:
+
+* proprietary GPT instructions
+* internal prompt architecture
+* confidential knowledge sources
+* private company information
+* customer or patient data
+* live configurations
+* access controls
+* credentials
+* internal performance records
+
+## Core Architecture Principle
+
+> AI capability was distributed across specialists, but authority, accountability, and approval remained with humans.
 
