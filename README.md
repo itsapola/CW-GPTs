@@ -1,5 +1,7 @@
 Enterprise GPT Suite — AI Workflow Architecture for Healthcare Marketing
 
+![CalmWave AI Workflow Suite](assets/cover.png)
+
 CalmWave AI Workflow Suite
 
 A governed ecosystem of specialized GPTs designed to support marketing strategy, execution, analysis, and operations across a healthcare technology organization.
