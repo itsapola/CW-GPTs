@@ -1,329 +1,150 @@
-Enterprise GPT Suite — AI Workflow Architecture for Healthcare Marketing
-
 ![CalmWave AI Workflow Suite](assets/cover.png)
 
-CalmWave AI Workflow Suite
+# CalmWave AI Workflow Suite
 
-A governed ecosystem of specialized GPTs designed to support marketing strategy, execution, analysis, and operations across a healthcare technology organization.
+### A governed AI operating system for healthcare marketing
 
-Status: Retired
-This portfolio case study documents the system architecture, governance model, and functional design of an internal GPT suite created during my tenure at CalmWave.
+A coordinated suite of ten specialized GPTs designed to support marketing research, strategy, brand governance, execution, analytics, and operations.
 
-> This repository is a portfolio case study. It does not contain proprietary prompts, internal company data, private knowledge files, customer information, or live GPT configurations.
+> **Status: Retired**
+> This repository is a portfolio case study documenting an internal system created during my tenure at CalmWave. It does not contain proprietary prompts, internal company data, private knowledge files, customer information, protected health information, or live GPT configurations.
 
-Documentation
+## At a Glance
 
-- [System overview](system-overview.md)
-- [Architecture diagram](architecture-diagram.md)
-- [Workflow map](workflow-map.md)
-- [Design principles](design-principles.md)
-- [Governance framework](governance.md)
-- [Evaluation framework](evaluation-framework.md)
-- [Synthetic example](examples/synthetic-example.md)
+* **10 specialized GPTs**
+* **5 internal users**
+* **4 functional system layers**
+* **2 years in operation**
+* **Hundreds of hours saved**
+* **Human-in-the-loop governance**
+* **Role-specific evaluation standards**
+* **Cross-specialist workflow architecture**
 
-Overview
+The suite operated from approximately **January 2024 through January 2026** and supported recurring workflows across marketing, public relations, operations, and sales.
 
-The CalmWave AI Workflow Suite was designed to move beyond a single general-purpose chatbot.
+![CalmWave AI Workflow Suite system map](assets/system-map.png)
 
-Instead, the system distributed distinct responsibilities across a network of specialized GPTs, each with a defined role, scope, operating logic, and review expectation.
+## The Opportunity
+
+General-purpose AI tools can accelerate work, but they also create predictable problems:
+
+* unclear responsibilities
+* inconsistent output quality
+* weak brand control
+* unsupported claims
+* duplicated effort
+* hidden assumptions
+* ambiguous review requirements
+* overreliance on fluent but unverified outputs
+
+The CalmWave AI Workflow Suite addressed these issues by distributing work across specialized GPTs with distinct roles, boundaries, operating logic, and review expectations.
 
 The goal was not to automate judgment.
 
-The goal was to create a practical AI operating layer that could:
+The goal was to create a practical internal AI operating layer that could:
 
-reduce repetitive knowledge work
-improve consistency across marketing outputs
-accelerate research and execution
-preserve brand and messaging standards
-make analytical workflows more accessible
-clarify where human judgment remained necessary
+* reduce repetitive knowledge work
+* improve output consistency
+* accelerate research and execution
+* preserve brand and messaging standards
+* make specialist expertise more accessible
+* support better decisions
+* clarify where human review remained necessary
 
-The suite ultimately expanded to ten specialized GPTs spanning strategy, research, brand, content, analytics, growth, operations, and executive support.
+## System Architecture
 
-At a Glance
+![CalmWave AI Workflow Suite architecture](assets/architecture-diagram.png)
 
-- 10 specialized GPTs
-- 4 functional layers
-- Human-in-the-loop governance
-- Role-specific evaluation criteria
-- Cross-agent workflow architecture
-- Retired internal system documented as a portfolio case study
+The system was organized into four functional layers:
 
-The System
+1. **Intelligence**
+   Research, evidence, context, and performance interpretation
 
-ABM Researcher
+2. **Strategy and Governance**
+   Prioritization, challenge, messaging discipline, and brand alignment
 
-Function: Account-based marketing research and sales intelligence
+3. **Execution**
+   Copy, websites, email, social, video, and channel-specific delivery
 
-Designed to support:
+4. **Measurement and Operations**
+   Performance analysis, workflow coordination, documentation, and iteration
 
-account and stakeholder research
-ABM brief development
-call and transcript analysis
-opportunity synthesis
-market and company research
-strategic preparation for outreach and meetings
+Human owners and reviewers remained accountable across every layer.
 
-The system helped transform fragmented account information into structured, actionable briefs while separating sourced findings from assumptions.
+## The Specialists
 
-WaveForm
+| Specialist         | Primary function                                                             |
+| ------------------ | ---------------------------------------------------------------------------- |
+| **ABM Researcher** | Account intelligence, call analysis, deep research, and ABM briefs           |
+| **WaveForm**       | Brand voice, messaging consistency, tone, terminology, and claims discipline |
+| **Amelie**         | Executive strategy, prioritization, challenge, and decision support          |
+| **Gregor**         | Video strategy, filmography, production planning, and editing guidance       |
+| **Gem**            | Marketing operations, coordination, documentation, and follow-through        |
+| **Juno**           | Website strategy, SEO, UX, information architecture, and CRO                 |
+| **Simon**          | Analytics, performance interpretation, reporting, and measurement planning   |
+| **Nelson**         | Email campaigns, lifecycle marketing, nurture sequences, and automation      |
+| **Fiona**          | Social media strategy, community building, engagement, and moderation        |
+| **Charlie**        | Copywriting, editing, content development, and message adaptation            |
 
-Function: Brand voice and messaging governance
+Each specialist was designed around a recurring business workflow, not simply given a different name or personality.
 
-Designed to support:
+## Adoption and Use
 
-brand voice consistency
-messaging development
-copy review
-tone adaptation
-positioning alignment
-language governance across channels
+The suite was used by **five internal users** across marketing and adjacent functions.
 
-WaveForm acted as a brand steward rather than a generic writing assistant. Its role was to identify off-brand language, reinforce approved messaging principles, and improve consistency without flattening every output into the same voice.
+All documented workflows were adopted, with the most common recurring use cases including:
 
-Amelie
+* email newsletters
+* LinkedIn posts
+* ABM account intelligence briefs
+* website copy updates
+* blog post drafts
+* executive byline editing
+* tone-of-voice checks
 
-Function: Executive strategist and advisor
+The systems also supported broader workflows across:
 
-Designed to support:
+* campaign planning
+* messaging review
+* website optimization
+* lifecycle marketing
+* analytics
+* video development
+* executive communications
+* marketing operations
+* sales preparation
+* account research
 
-strategic thinking
-executive decision support
-narrative development
-prioritization
-leadership communications
-preparation for high-stakes discussions
+Across marketing, public relations, operations, and sales, the suite saved an estimated **hundreds of hours** of research, drafting, editing, analysis, and coordination time.
 
-Amelie was structured to challenge assumptions, identify gaps, and distinguish between facts, interpretations, risks, and recommendations.
+## Why a Specialist System
 
-Gregor
+A single general-purpose GPT creates several operating and governance problems:
 
-Function: Filmography, video strategy, and editing support
+* responsibilities become unclear
+* output standards vary by request
+* users do not always know which context to provide
+* research, strategy, governance, and execution become blended together
+* review requirements are easy to overlook
+* the system can appear more authoritative than it should
 
-Designed to support:
-
-video concept development
-shot planning
-interview structure
-script and storyboard review
-edit recommendations
-production planning
-visual narrative development
-
-Gregor translated marketing goals into practical video direction while accounting for production constraints, audience, channel, and intended action.
-
-Gem
-
-Function: Marketing operations and personal assistance
-
-Designed to support:
-
-task organization
-workflow coordination
-project planning
-documentation
-meeting follow-up
-operational prioritization
-recurring marketing administration
-
-Gem functioned as a marketing operations layer, helping convert scattered requests and responsibilities into clearer systems, actions, and timelines.
-
-Juno
-
-Function: Website strategy, SEO, UX, and conversion optimization
-
-Designed to support:
-
-website audits
-SEO recommendations
-user experience analysis
-information architecture
-conversion-rate optimization
-landing-page review
-content hierarchy
-digital journey analysis
-
-Juno evaluated websites as integrated business systems rather than treating SEO, UX, messaging, and conversion as separate disciplines.
-
-Simon
-
-Function: Marketing analytics and performance interpretation
-
-Designed to support:
-
-campaign analysis
-metric interpretation
-performance summaries
-trend identification
-reporting
-measurement planning
-executive-ready insights
-
-Simon was designed to move beyond reporting numbers and toward explaining what changed, why it mattered, and what action should follow.
-
-Nelson
-
-Function: Email strategy, campaigns, and automation
-
-Designed to support:
-
-email campaign planning
-lifecycle communications
-nurture sequences
-segmentation
-subject-line and copy development
-automation logic
-campaign optimization
-
-Nelson connected messaging, customer journey, timing, segmentation, and conversion goals rather than treating email as an isolated production channel.
-
-Fiona
-
-Function: Social media strategy and community building
-
-Designed to support:
-
-channel strategy
-content planning
-community engagement
-social copy
-campaign concepts
-audience development
-response and moderation guidance
-
-Fiona emphasized audience behavior, relationship-building, and platform context rather than simply generating posts.
-
-Charlie
-
-Function: Copywriting and content development
-
-Designed to support:
-
-campaign copy
-website copy
-social and email content
-long-form content
-editing
-message refinement
-tone and format adaptation
-
-Charlie served as the primary writing specialist within the suite, while WaveForm remained responsible for brand governance and consistency.
-
-Why a Multi-Agent Model
-
-A single general-purpose GPT creates several governance problems:
-
-responsibilities become unclear
-output standards vary by request
-users do not always know which context to provide
-brand, strategy, research, and execution become blended together
-review requirements are easy to overlook
-one system can appear more authoritative than it should
-
-The multi-agent model created clearer boundaries.
+The specialist model created clearer boundaries.
 
 Each GPT had:
 
-a defined business role
-an explicit scope
-expected inputs
-structured output patterns
-known limitations
-review requirements
-escalation points for human judgment
+* a defined business role
+* an explicit scope
+* expected inputs
+* structured output patterns
+* known limitations
+* review requirements
+* escalation points for human judgment
 
-This made the system easier to use, evaluate, govern, and improve.
+The system was modular rather than rigid. Users could begin with the specialist most relevant to the task and move work through additional stages as needed.
 
-Governance Principles
+## Example Workflow
 
-1. Human Judgment Remained Accountable
-
-The GPTs were designed to assist decision-making, not replace ownership.
-
-Users remained responsible for:
-
-validating facts
-approving public-facing language
-reviewing strategic recommendations
-confirming claims
-assessing reputational and regulatory risk
-making final business decisions
-
-2. Facts, Assumptions, and Recommendations Were Separated
-
-Where appropriate, outputs distinguished between:
-
-verified information
-user-provided information
-inferred context
-assumptions
-recommendations
-unresolved questions
-
-This reduced the risk of plausible-sounding interpretation being mistaken for fact.
-
-3. Sensitive Information Was Minimized
-
-The suite was not intended to process protected health information, confidential customer information, credentials, or unnecessary personal data.
-
-Users were expected to avoid entering information that was not required for the task.
-
-4. Source Quality Mattered
-
-Research-focused workflows emphasized:
-
-source identification
-evidence quality
-recency
-conflicts between sources
-confidence levels
-gaps in available information
-
-Outputs were stronger when they showed their basis instead of presenting unsupported certainty.
-
-5. Brand Governance Was Centralized
-
-WaveForm acted as the primary brand-governance layer.
-
-This helped prevent every GPT from independently interpreting brand voice and creating inconsistent standards across the system.
-
-6. Specialized Systems Had Defined Boundaries
-
-The GPTs were intentionally differentiated.
-
-For example:
-
-Charlie could draft copy
-WaveForm could assess brand alignment
-Amelie could challenge the strategic rationale
-Simon could evaluate performance
-Juno could assess the digital experience
-
-This reduced role confusion and encouraged more deliberate workflows.
-
-7. Outputs Were Drafts, Not Authority
-
-All generated materials were treated as working outputs requiring review.
-
-The systems were not positioned as legal, clinical, regulatory, financial, or compliance authorities.
-
-8. Governance Was Part of Product Design
-
-Guardrails were not added after the fact.
-
-They shaped:
-
-system roles
-instructions
-output formats
-review workflows
-user expectations
-escalation logic
-testing criteria
-Example Cross-GPT Workflow
-
-A campaign might move through the suite as follows:
-
+```text
 ABM Researcher
 Account and audience intelligence
         ↓
@@ -336,7 +157,7 @@ Messaging and brand alignment
 Charlie
 Copy development
         ↓
-Nelson / Fiona / Juno / Gregor
+Juno / Nelson / Fiona / Gregor
 Channel-specific execution
         ↓
 Simon
@@ -344,130 +165,189 @@ Performance interpretation
         ↓
 Gem
 Follow-up, documentation, and operational coordination
+```
 
-The value of the suite came not only from each individual GPT, but from the way responsibilities could be sequenced across a broader operating system.
+Not every workflow required every specialist.
 
-Evaluation Framework
+The value came from preserving context, evidence, decisions, assumptions, and review requirements as work moved through the system.
 
-The GPTs were evaluated across several dimensions.
+## Governance Model
 
-Accuracy
-Did the output reflect the information provided?
-Were unsupported claims introduced?
-Were assumptions clearly marked?
-Were source limitations visible?
-Strategic Quality
-Did the output identify the real decision or business problem?
-Did it surface risks and tradeoffs?
-Did it prioritize rather than merely summarize?
-Did it provide a useful next action?
-Brand Alignment
-Did the output match approved messaging principles?
-Did it avoid generic or inflated language?
-Was tone appropriate for the audience and channel?
-Did the system preserve distinction between brand voice and personal preference?
-Usability
-Could a non-expert understand the output?
-Was the structure easy to scan?
-Were recommendations actionable?
-Did the output reduce work rather than create more cleanup?
-Governance
-Were facts and assumptions separated?
-Was human review clearly required where appropriate?
-Did the system stay within its intended scope?
-Did it avoid presenting uncertain material with false confidence?
-Consistency
-Did similar inputs receive comparable treatment?
-Did the system follow its required output structure?
-Did it preserve quality across repeated use?
-Did the specialist remain within its assigned role?
-Design Lessons
-Specialization improves clarity, but only when boundaries are real
+The suite was governed as an internal decision-support system, not as an autonomous authority.
 
-Giving GPTs different names is not enough.
+### Human accountability
 
-Each system needs a distinct purpose, workflow, and quality standard. Otherwise, the suite becomes a collection of interchangeable writing bots.
+Users remained responsible for validating facts, approving language, reviewing strategic recommendations, assessing risk, and making final decisions.
 
-Governance must be visible to the user
+### Role fidelity
 
-Internal instructions alone are insufficient.
+Each GPT had a defined scope and was expected to redirect or escalate work that exceeded its intended role.
 
-Users need clear signals about:
+### Factual integrity
 
-what the system knows
-what it is assuming
-what requires verification
-what the system should not decide
-when human review is mandatory
-The interface shapes behavior
+Outputs were expected to distinguish between:
 
-Output templates, required questions, confidence labels, and review prompts can influence responsible use more effectively than a disclaimer buried in documentation.
+* verified facts
+* user-provided context
+* sourced findings
+* inference
+* assumptions
+* recommendations
+* unresolved questions
 
-Brand governance should not be distributed casually
+### Data minimization
 
-Allowing every system to interpret the brand independently increases inconsistency. Centralizing brand logic created a clearer standard across workflows.
+Users were expected to provide only the information necessary for the task and avoid entering protected health information, credentials, or unnecessary sensitive data.
 
-The best AI workflows reduce ambiguity
+### Claims discipline
 
-The highest-value systems did not simply generate more content. They helped users:
+Clinical, legal, regulatory, customer, performance, and outcome-related claims required appropriate evidence and human review.
 
-frame the problem
-organize evidence
-identify missing information
-compare options
-clarify tradeoffs
-determine the next decision
-Portfolio Scope
+### Human review
 
-This repository intentionally excludes:
+The greater the consequence, uncertainty, permanence, or external exposure, the stronger the review requirement.
 
-proprietary system prompts
-confidential company information
-internal knowledge files
-customer or patient information
-protected health information
-internal performance data
-private conversations
-live GPT configurations
-credentials or API keys
+The complete model is documented in [governance.md](governance.md).
 
-Examples included in this portfolio should use synthetic, anonymized, or publicly available information.
+## Evaluation and Continuous Improvement
 
-My Role
+The suite was evaluated as a set of internal AI products rather than as a collection of prompts.
+
+Quality dimensions included:
+
+* factual accuracy
+* strategic quality
+* relevance
+* role fidelity
+* brand alignment
+* usability
+* actionability
+* transparency
+* governance compliance
+* consistency
+* efficiency
+
+Evaluation was both shared and specialist-specific.
+
+For example:
+
+* ABM Researcher emphasized source quality and distinction between evidence and inference.
+* WaveForm emphasized brand and messaging alignment.
+* Amelie emphasized strategic depth, prioritization, and challenge.
+* Simon emphasized analytical integrity and appropriate treatment of causation.
+* Charlie emphasized clarity, audience fit, usability, and preservation of meaning.
+
+The GPTs were continuously refined based on output quality and user feedback.
+
+Examples of iteration included:
+
+* adjusting the verbosity and depth of ABM briefs
+* improving the tone and naturalness of copywriting output
+* refining audience tailoring as business needs changed
+* tightening brand voice and terminology controls
+* improving output structure and prioritization
+* clarifying when assumptions or evidence gaps needed to be surfaced
+
+The complete model is documented in [evaluation-framework.md](evaluation-framework.md).
+
+## Design Principles
+
+The system was guided by several core design principles:
+
+1. Design around recurring workflows, not novelty.
+2. Give every specialist a clear job.
+3. Separate strategy, governance, and execution.
+4. Prefer structured, reviewable outputs.
+5. Make missing information visible.
+6. Match rigor to consequence.
+7. Design for human review.
+8. Preserve distinct specialist perspectives.
+9. Centralize shared standards.
+10. Build for iteration and retirement.
+
+The complete rationale is documented in [design-principles.md](design-principles.md).
+
+## My Role
 
 I designed the suite as a functional AI operating system for marketing.
 
 My work included:
 
-identifying suitable business use cases
-defining specialist roles
-structuring system responsibilities
-designing workflows
-establishing governance principles
-setting output expectations
-testing quality and usability
-refining boundaries between systems
-connecting strategic and executional use cases
-driving practical adoption within marketing workflows
+* identifying high-value business use cases
+* defining specialist roles
+* designing system responsibilities and boundaries
+* structuring workflows and handoffs
+* establishing governance principles
+* creating output standards
+* testing quality and usability
+* refining the systems based on user feedback
+* resolving overlap between specialists
+* adapting the suite to changing business needs
+* supporting adoption across marketing and adjacent functions
+* maintaining and improving the GPTs throughout their lifecycle
 
-Outcome
+The work combined:
+
+* AI product thinking
+* marketing strategy
+* workflow architecture
+* brand governance
+* operations design
+* evaluation
+* responsible AI controls
+* change management
+
+## Outcome
+
+From approximately January 2024 through January 2026, the suite supported five internal users and recurring workflows across marketing, public relations, operations, and sales.
+
+It was used most frequently for:
+
+* email newsletters
+* LinkedIn content
+* ABM intelligence briefs
+* website copy
+* blog drafting
+* executive byline editing
+* tone-of-voice review
+
+The system saved an estimated **hundreds of hours** while improving consistency through continuous refinement of specialist instructions, output structures, tone, depth, and audience adaptation.
 
 The project demonstrated how a marketing organization could use generative AI as a governed system of specialized capabilities rather than as an unstructured collection of prompts.
 
-The core design principle was simple:
+## Documentation
 
-The more consequential the output, the more visible the reasoning, evidence, limitations, and human review should become.
+* [System overview](system-overview.md)
+* [Architecture diagram](architecture-diagram.md)
+* [Workflow map](workflow-map.md)
+* [Design principles](design-principles.md)
+* [Governance framework](governance.md)
+* [Evaluation framework](evaluation-framework.md)
+* [Synthetic example](examples/synthetic-example.md)
 
-Repository Purpose
+## Portfolio Scope
 
-This repository is a high-level portfolio case study intended to demonstrate:
+This repository intentionally excludes:
 
-AI product thinking
-marketing systems design
-workflow architecture
-responsible AI governance
-cross-functional marketing strategy
-operationalization of generative AI
-human-in-the-loop design
+* proprietary system prompts
+* private GPT instructions
+* confidential company information
+* internal knowledge files
+* customer or patient information
+* protected health information
+* internal performance data
+* private conversations
+* live GPT configurations
+* credentials or API keys
 
-It is not a reproduction or public release of CalmWave’s internal systems.
+Examples included in this repository use synthetic, anonymized, or publicly available information.
+
+## Status
+
+The CalmWave AI Workflow Suite is retired.
+
+This repository preserves the system architecture, governance model, evaluation approach, design rationale, and operating lessons without reproducing proprietary internal systems.
+
+## Core Principle
+
+> AI assists. Humans lead. Accountability remains human.
