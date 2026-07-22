@@ -7,6 +7,16 @@ A governed ecosystem of specialized GPTs designed to support marketing strategy,
 Status: Retired
 This portfolio case study documents the system architecture, governance model, and functional design of an internal GPT suite created during my tenure at CalmWave. Proprietary prompts, company knowledge files, internal data, and confidential outputs are not included.
 
+Documentation
+
+- [System overview](system-overview.md)
+- [Architecture diagram](architecture-diagram.md)
+- [Workflow map](workflow-map.md)
+- [Design principles](design-principles.md)
+- [Governance framework](governance.md)
+- [Evaluation framework](evaluation-framework.md)
+- [Synthetic example](examples/synthetic-example.md)
+
 Overview
 
 The CalmWave AI Workflow Suite was designed to move beyond a single general-purpose chatbot.
@@ -26,7 +36,17 @@ clarify where human judgment remained necessary
 
 The suite ultimately expanded to ten specialized GPTs spanning strategy, research, brand, content, analytics, growth, operations, and executive support.
 
+At a Glance
+
+- 10 specialized GPTs
+- 4 functional layers
+- Human-in-the-loop governance
+- Role-specific evaluation criteria
+- Cross-agent workflow architecture
+- Retired internal system documented as a portfolio case study
+
 The System
+
 ABM Researcher
 
 Function: Account-based marketing research and sales intelligence
