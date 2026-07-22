@@ -5,7 +5,9 @@ CalmWave AI Workflow Suite
 A governed ecosystem of specialized GPTs designed to support marketing strategy, execution, analysis, and operations across a healthcare technology organization.
 
 Status: Retired
-This portfolio case study documents the system architecture, governance model, and functional design of an internal GPT suite created during my tenure at CalmWave. Proprietary prompts, company knowledge files, internal data, and confidential outputs are not included.
+This portfolio case study documents the system architecture, governance model, and functional design of an internal GPT suite created during my tenure at CalmWave.
+
+> This repository is a portfolio case study. It does not contain proprietary prompts, internal company data, private knowledge files, customer information, or live GPT configurations.
 
 Documentation
 
